@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mi Primera Página</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script-->
+<script src="js/jquery-1.3.2.js"></script>
+<script>
+$(document).ready(function() {
+	$('#link1').click(function() {
+		$("#noticia1").fadeIn(1200);
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="contenedor">
+	
+    <div id="cabecera">
+    	<div id="logo"><img src="images/logo.png" alt="Logo" /></div>
+        
+        <div id="menu">
+            <ul>                                              
+                <li><a href="#" title="">home</a></li>
+                <li><a href="#" title="">Quienes somos</a></li>
+                <li><a href="#" title="">Portafolio</a></li>
+                <li><a href="#" title="">Servicios</a></li>
+                <li><a href="#" title="">Contacto</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <div id="content">
+ 		<div id="izquierda">
+        	<div class="titulo">Noticia del home 1</div>
+            <div class="detalle">
+            	<img src="images/foto1.png" align="left" hspace="5" />Sergio Markarián se quedará con las ganas de ver en pleno a la que sería su delantera titular compuesta por Claudio Pizarro, Jefferson Farfán y Juan Vargas, luego de que se confirmara que el lateral de la Fiorentina no actuará ante la selección de Bolivia debido a un problema personal relacionado a la salud de su abuelo.<br />
+                <a href="#" id="link1">ver mas >></a>
+            </div>
+            <div id="noticia1">
+            La incógnita que surgió en las últimas horas es quién sería el reemplazo de Juan Vargas en el equipo que dirige Markarián, cosa que finalmente se determinó: el tercer atacante de la selección sería Wilmer Aguirre.
+			<br /><br />
+			“El ‘Zorrito’elcomercio.pe/tag/3698/wilmer-aguirre, quien hasta ahora no había podido debutar con la selección de Markarián (no pudo actuar por lesión cuando fue convocado para los primeros encuentros ante Canadá y Jamaica), tendrá así su oportunidad de alinear desde el arranque ante los del altiplano.
+			<br /><br />
+			Otra de las posibilidades que se manejaba es que Yoshimar Yotún, quien conoce el puesto porque fue el reemplazo de Vargas en la Copa América. Sin embargo, Markarián se decidió finalmente por el ‘Zorrito’.
+            <br /><br />
+            </div>
+            
+        	<div class="titulo">Noticia del home 1</div>
+            <div class="detalle">
+            	<img src="images/foto1.png" align="left" hspace="5" />Sergio Markarián se quedará con las ganas de ver en pleno a la que sería su delantera titular compuesta por Claudio Pizarro, Jefferson Farfán y Juan Vargas, luego de que se confirmara que el lateral de la Fiorentina no actuará ante la selección de Bolivia debido a un problema personal relacionado a la salud de su abuelo.
+            </div>
+            
+        
+        </div>
+        <div id="derecha">
+         <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FJoeDayz%2F162969128159%23%21%2Fpages%2FJoeDayz%2F162969128159&amp;width=294&amp;colorscheme=light&amp;connections=15&amp;stream=true&amp;header=true&amp;height=587" style="border:none; overflow:hidden; width:294px; height:587px;"></iframe>
+
+        </div>
+ 
+ 
+    </div>
+    
+    <div id="pie">
+    	<div id="pie1">Copyright © 2011  by JoeDayz</div>
+        <div id="pie2">Quienes somos | Portafolio | Servicios | Conctato</div>
+    </div>
+</div>
+</body>
+</html>
