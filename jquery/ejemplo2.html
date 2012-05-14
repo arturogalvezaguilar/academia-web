@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script-->
+<script src="js/jquery-1.3.2.js"></script>
+<script>
+$(document).ready(function() {
+	$('#aparecer').click(function() {
+		$("#oculto").slideDown("slow");
+	});
+	$('#cambiar').click(function() {
+		$("#oculto").html("Hola a todos");
+	});	
+
+	$('#ocultar').click(function() {
+		$("#oculto").slideUp("slow");
+	});	
+	
+	$('#color').click(function() {
+		console.log("entro a color")
+		$("#oculto").css({
+	   "background-color": "#000000",
+	   "color": "#ffffff"
+		})
+	});	
+});
+</script>
+</head>
+
+<body>
+<div id="contenido">Este es un contenido de prueba debajo de este DIV debe aparecer un contenido oculto</div>
+<div id="oculto" style="display:none; background-color:#0099FF; padding:10px 10px 10px 10px;">
+	Capa que estaba oculta y apareció<br />
+    Contenido 1<br />
+    Contenido 2<br />
+    Contenido 3<br />
+</div>
+<a href="#" id="aparecer">Ver Capa oculta</a> | <a href="#" id="cambiar">cambiar el contenido</a> | <a href="#" id="ocultar">Ocultar el contenido</a> | <a href="#" id="color">Cambiar el color</a><br />
+
+</div>
+</body>
+</html>
